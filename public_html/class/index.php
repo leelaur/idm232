@@ -68,7 +68,7 @@ $full_name= $first_name . $last_name;
 echo $full_name;// LaurenLee
 
 $phrase = 'Hello my name is'.' '.$first_name . ' '.$last_name;
-echo $phrase;//hello my name is lauren lee
+echo '$phrase';//hello my name is lauren lee
 
 $phrase = 'Hello';
 //single quotes vs double
@@ -87,10 +87,38 @@ echo $basic_math_value;
 
 //increment increase
 $var2++ // 4++
-echo 'Increment $var2'. $var2;
+//echo 'Increment $var2'. $var2;
 //decrease is --
 
 //if you want to round a number up do echo round (...)
 
 //is_int gives you true or false if it is an integer
+
+
+// 10/06
+//if (!$user_logged_in)=if (user is NOT logged it) THE OPPOSITE !=NOT
+
+// $a = 2;
+// $b = 2;
+
+// if ($a>$b) {
+//     echo 'hey';
+// } elseif ($a<$b){
+//     echo 'wow';
+// } else {
+// echo 'equality for all!';
+// }
+
+// use switch statement when you have a lot of things 
+
+//Loops
+//endless loop example but DONT DO THIS OR BREAKS THE COMPUTER
+//     $count = 0;
+
+// while ($count <= 10) {
+//     echo $count; //0
+//     echo '<br';
+// }
+
+
 ?>
