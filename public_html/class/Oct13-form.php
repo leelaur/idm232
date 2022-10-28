@@ -33,4 +33,6 @@ $cars=[car1, car2, car3];
 
 redirect_to('https://www.google.com')
 // or can redirect inside files
+
 ?>
+
