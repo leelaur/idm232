@@ -23,3 +23,15 @@ $document_title = $page_title . ' | ' . $site_title; // Home | Unfolded Origami
 <body>
 
   <!-- Main Content Begins -->
+  <header>
+        <div class="menu">
+            <h2> Unfolded Origami </h2>
+            <nav>
+                <ul class="menu-list">
+                    <li class="menu-list-item">Categories</li>
+                    <li class="menu-list-item">Search</li>
+                    <li class="menu-list-item">Admin</li>
+                </ul>
+            </nav>
+        </div>
+    </header>

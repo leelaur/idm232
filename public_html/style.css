@@ -45,7 +45,7 @@ hr {
 
 .category-entire {
     display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
 gap: 40px;
 margin-top: 50px;
 }
@@ -58,7 +58,7 @@ margin-top: 50px;
 }
 
 .category-menu {
-    min-width: 300px;
+    min-width: 250px;
     height: 100%;
     border-style: dashed ;
     display : flex;
@@ -103,9 +103,9 @@ height: 80px;
 .all-origami {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 20px;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
     justify-self: center;
-width: 1000px;
 
 }
 
@@ -120,6 +120,9 @@ width: 1000px;
     justify-self: center;
 }
 
+.instruction {
+
+}
 
 /* search */
 
@@ -195,7 +198,22 @@ margin: 30px 10% 0;
 
 /*responsive */
 
-@media only screen and (max-width: 1500px) {
+
+  @media only screen and (max-width: 1200px) {
+    .category-menu {
+        display: none;
+    }
+    .wrapper {
+        margin: auto;
+        width: 100%;
+    }
+
+    .all-origami {
+        justify-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
     .all-origami {
 
         grid-template-columns: 800px;
@@ -206,4 +224,4 @@ margin: 30px 10% 0;
     .origami-img {
         width: 500px;
     }
-  }
+}
