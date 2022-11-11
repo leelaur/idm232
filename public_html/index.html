@@ -8,14 +8,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="menu-color">
         <div class="menu">
-            <h2> Unfolded Origami </h2>
+            <h2> <a class="menu-link">Unfolded Origami </a> </h2>
             <nav>
                 <ul class="menu-list">
-                    <li class="menu-list-item">Categories</li>
-                    <li class="menu-list-item">Search</li>
-                    <li class="menu-list-item">Admin</li>
+                    <a href="leelaur.com" class="menu-link">
+                        <li class="menu-list-item">Home</li>
+                    </a>
+                    <a href="leelaur.com" class="menu-link">
+                        <li class="menu-list-item">Categories</li>
+                    </a>
+                    <li class="menu-list-item" id="searchInput" ><img src="https://static.thenounproject.com/png/424968-200.png" style="width:18px;"></li>
+                        <form class="search-bar" id="form"> 
+                            <input type="search" placeholder="Search..." class="search-box">
+                            <button class="search-button">Search</button>
+                        </form>
+                    <a href="leelaur.com" class="menu-link">
+                        <li class="menu-list-item menu-list--line">Admin</li>
+                    </a>
                 </ul>
             </nav>
         </div>
@@ -26,10 +37,6 @@
          <div class="search wrapper">
             <div class="search-img--center">
                 <img src="https://via.placeholder.com/500x300" class="search-img">
-                <form class="search-bar" id="form"> 
-                    <input type="search" placeholder="Search..." class="search-box">
-                    <button class="search-button">Search</button>
-                </form>
             </div>
         </div>
         <hr>
