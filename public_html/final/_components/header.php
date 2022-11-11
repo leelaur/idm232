@@ -35,3 +35,4 @@ $document_title = $page_title . ' | ' . $site_title; // Home | Unfolded Origami
             </nav>
         </div>
     </header>
+    <hr>
