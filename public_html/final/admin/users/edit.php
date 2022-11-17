@@ -9,7 +9,7 @@ include_once __DIR__ . '/../../_components/header.php';
 // get users data from database
 $query = "SELECT * FROM users WHERE id = {$_GET['id']}";
 $result = mysqli_query($db_connection, $query);
-if ($result->num_rows > 0) {
+if ($result-> num_rows > 0) {
     // Get row from results and assign to $user variable;
     $user = mysqli_fetch_assoc($result);
 } else {

@@ -133,6 +133,7 @@ body {
 
 }
 
+
 /* MENU */
 
 .menu {
@@ -142,6 +143,18 @@ body {
   align-items: center;
   margin: 0 10%;
 
+}
+
+.menu-link {
+text-decoration: none;
+}
+
+.menu-color {
+  background-color: var(--blue-color);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  
 }
 
 .menu-list {
@@ -157,9 +170,13 @@ list-style: none;
   padding: 29px 10px;
   width: 100px;
 }
+.menu-list--line {
+  border-right:dashed;
+}
 /* horizontal line */
 hr {
   border-style: dashed;
+  margin: 0;
 }
 /* category entire */
 
@@ -222,8 +239,8 @@ height: 80px;
 
 .all-origami {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
   gap: 50px;
   justify-self: center;
 
@@ -240,18 +257,22 @@ height: 80px;
   justify-self: center;
 }
 
+.instruction-top {
+  padding-top: 100px;
+}
 /* search */
 
 .search {
   height: 70vh;
+  padding-top: 80px;
   /* background-color: aqua; */
+
 }
 .search-img {
   max-width: 80%;
 }
 .search-img--center {
   padding-top: 8%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -259,8 +280,8 @@ height: 80px;
 
 .search-bar {
   margin: auto;
-  padding-top: 50px;
   display: flex;
+  margin-top: 30px;
 }
 
 .search-box {
@@ -271,7 +292,7 @@ height: 80px;
   height: 40px; */
 
   width: 400px;
-  border: 3px dashed;
+  border: none;
   border-right: none;
   padding: 5px;
   height: 40px;
@@ -288,6 +309,7 @@ height: 80px;
   text-align: center;
   color: #fff;
   border-radius: 0 5px 5px 0;
+  text-decoration: none;
   cursor: pointer;
   font-size: 20px;    
 }
@@ -314,8 +336,16 @@ margin: 30px 10% 0;
 
 /*responsive */
 
+@media only screen and (max-width: 1400px) {
+
+  .all-origami {
+      grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  }
+}
 
 @media only screen and (max-width: 1200px) {
+ 
   .category-menu {
       display: none;
   }
@@ -331,10 +361,8 @@ margin: 30px 10% 0;
 
 @media only screen and (max-width: 900px) {
   .all-origami {
-
-      grid-template-columns: 800px;
-      width: 600px;
-      justify-content: center;
+      grid-template-columns: 1fr ;
+  grid-template-rows: auto;
   }
 
   .origami-img {

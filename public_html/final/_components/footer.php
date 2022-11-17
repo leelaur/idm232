@@ -1,4 +1,5 @@
   <!-- Main Content Ends -->
+  <hr>
   <footer>
         <p> Unfolded Origami</p>
         <nav>
