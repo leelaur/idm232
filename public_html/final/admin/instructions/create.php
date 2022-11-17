@@ -4,7 +4,6 @@ include_once __DIR__ . '/../../app.php';
 $page_title = 'Create Users';
 include_once __DIR__ . '/../../_components/header.php';
 ?>
-<?php include_once __DIR__ . '/../../_components/headspace.php';?>
 
 <?php
 // get users data from database
@@ -17,7 +16,7 @@ $result = mysqli_query($db_connection, $query);
   <div class="px-4 sm:px-6 lg:px-8">
     <div class="sm:flex sm:items-center">
       <div class="sm:flex-auto">
-        <h1 class="text-xl font-semibold text-gray-900">Create User</h1>
+        <h1 class="text-xl font-semibold text-gray-900">Create Origami Instructions</h1>
       </div>
     </div>
     <div class="mt-8 flex flex-col">
@@ -26,24 +25,29 @@ $result = mysqli_query($db_connection, $query);
           <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
             <form action="<?php echo site_url(); ?>/_includes/process-create-users.php" method="POST">
               <div class="block">
-                <label for="">First Name</label>
-                <input class="border-black border-2" type="text" name="first_name">
+                <label for="">Title</label>
+                <input class="border-black border-2" type="text" name="title">
               </div>
 
               <div class="block">
-                <label for="">Last Name</label>
-                <input class="border-black border-2" type="text" name="last_name">
+                <label for="">Description</label>
+                <br>
+                <textarea class=" js-tinymce border-black border-2" name="description"></textarea>
               </div>
 
 
               <div class="block">
-                <label for="">Email</label>
-                <input class="border-black border-2" type="email" name="email">
+                <label for="">Materials</label>
+                <br>
+                <textarea class=" js-tinymce border-black border-2" name="description"></textarea>
               </div>
+
               <div class="block">
-                <label for="">Phone Number</label>
-                <input class="border-black border-2" type="text" name="phone">
+                <label for="">Instructions</label>
+                <br>
+                <textarea class=" js-tinymce border-black border-2" name="description"></textarea>
               </div>
+
               <input
                 class="nline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
                 type="submit" value="submit">

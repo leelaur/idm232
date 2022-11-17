@@ -374,3 +374,8 @@ margin: 30px 10% 0;
 .js-tinymce {
   height: 1px;
 }
+
+/*Top space after fixed nav */
+.topSpace {
+  min-height: 75px;
+}

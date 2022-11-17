@@ -21,13 +21,13 @@ $main_navigation = [
             <h2> <a class="menu-link">Unfolded Origami </a> </h2>
             <nav>
                 <ul class="menu-list">
-                    <a src="../final" class="menu-link">
+                    <a href="#" class="menu-link">
                         <li class="menu-list-item">Home</li>
                     </a>
-                    <a href="../" class="menu-link">
+                    <a href="#" class="menu-link">
                         <li class="menu-list-item">Categories</li>
                     </a>
-                    <a href="../admin/index.php" class="menu-link">
+                    <a href="#" class="menu-link">
                         <li class="menu-list-item menu-list--line">Admin</li>
                     </a>
                 </ul>
