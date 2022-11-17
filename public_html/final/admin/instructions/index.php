@@ -3,10 +3,11 @@ include_once __DIR__ . '/../../app.php';
 $page_title = 'Users';
 include_once __DIR__ . '/../../_components/header.php';
 ?>
+<?php include_once __DIR__ . '/../../_components/headspace.php';?>
 
 <?php
 // get users data from database
-$query = 'SELECT * FROM users';
+$query = 'SELECT * FROM instructions';
 $result = mysqli_query($db_connection, $query);
 
 ?>
@@ -17,8 +18,8 @@ $result = mysqli_query($db_connection, $query);
   <div class="px-4 sm:px-6 lg:px-8">
     <div class="sm:flex sm:items-center">
       <div class="sm:flex-auto">
-        <h1 class="text-xl font-semibold text-gray-900">Users</h1>
-        <p class="mt-2 text-sm text-gray-700">A list of all the users in your account including their name, title, email
+        <h1 class="text-xl font-semibold text-gray-900">All Instructions</h1>
+        <p class="mt-2 text-sm text-gray-700">A list of all the instructions in your account including their title, description, materials, instructions
           and role.</p>
         <?php
         // If error query param exist, show error message
@@ -31,8 +32,8 @@ $result = mysqli_query($db_connection, $query);
       <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
         <button type="button"
           class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto">
-          <a href="<?php echo site_url() . '/admin/users/create.php' ?>">
-            Add user</a></button>
+          <a href="<?php echo site_url() . '/admin/instructions/create.php' ?>">
+            Add instruction</a></button>
       </div>
     </div>
     <div class="mt-8 flex flex-col">
@@ -42,11 +43,11 @@ $result = mysqli_query($db_connection, $query);
             <table class="min-w-full divide-y divide-gray-300">
               <thead class="bg-gray-50">
                 <tr>
-                  <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">ID</th>
-                  <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">Name
+                  <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">Title</th>
+                  <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">Description
                   </th>
-                  <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Email</th>
-                  <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Phone</th>
+                  <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Materials</th>
+                  <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Instruction</th>
                   <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-6">
                     <span class="sr-only">Edit</span>
                   </th>
