@@ -9,5 +9,3 @@ $APP_CONFIG = [
     'database_pass' => 'root',
     'database_name' => 'local_idm232_01',
 ];
-
-//#QO]UcMgb*+k
