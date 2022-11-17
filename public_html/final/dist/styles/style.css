@@ -133,7 +133,6 @@ body {
 
 }
 
-
 /* MENU */
 
 .menu {
@@ -341,4 +340,9 @@ margin: 30px 10% 0;
   .origami-img {
       width: 500px;
   }
+}
+
+/* TINY MCE */
+.js-tinymce {
+  height: 1px;
 }
