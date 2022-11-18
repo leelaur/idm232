@@ -11,12 +11,21 @@ $last_name_value = $_POST['last_name'];
 $email_value = $_POST['email'];
 $phone_value = $_POST['phone'];
 
+// var_dump($_POST);
+// die;
+
 $result = add_user(
     $first_name_value,
     $last_name_value,
     $email_value,
     $phone_value
 );
+
+
+
+// $result = add_user($first_name, $last_name, $email, $phone);
+// var_dump($first_name, $last_name, $email, $phone);
+// die();
 
 // Check there are no errors with our SQL statement
 if ($result) {
@@ -25,3 +34,4 @@ if ($result) {
     $error_message = 'Sorry there was an error creating the user';
     redirect_to('/admin/users?error=' . $error_message);
 }
+?> 

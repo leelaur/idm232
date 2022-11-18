@@ -24,8 +24,8 @@ function add_user($first_name, $last_name, $email, $phone)
 {
     global $db_connection;
     $query = 'INSERT INTO users';
-    $query .= ' (first_name, last_name, password, email, phone)';
-    $query .= " VALUES ('$first_name', '$last_name', 'password', '$email', '$phone')";
+    $query .= ' (first_name, last_name, email, phone)';
+    $query .= " VALUES ('$first_name', '$last_name', '$email', '$phone')";
 
     $result = mysqli_query($db_connection, $query);
     return $result;
