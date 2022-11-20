@@ -41,13 +41,13 @@ $result = mysqli_query($db_connection, $query);
               <div class="block">
                 <label for="">Materials</label>
                 <br>
-                <textarea class=" js-tinymce border-black border-2" name="description"></textarea>
+                <textarea class=" js-tinymce border-black border-2" name="materials"></textarea>
               </div>
 
               <div class="block">
                 <label for="">Instructions</label>
                 <br>
-                <textarea class=" js-tinymce border-black border-2" name="description"></textarea>
+                <textarea class=" js-tinymce border-black border-2" name="instructions"></textarea>
               </div>
 
               <input

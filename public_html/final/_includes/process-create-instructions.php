@@ -11,7 +11,10 @@ $description_value = $_POST['description'];
 $materials_value = $_POST['materials'];
 $instructions_value = $_POST['instructions'];
 
-$result = add_services(
+// var_dump($_POST);
+// die;
+
+$result = add_instructions(
     $title_value,
     $description_value, 
     $materials_value, 
