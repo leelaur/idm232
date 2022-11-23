@@ -33,23 +33,23 @@ if ($result-> num_rows > 0) {
               <div class="block">
                 <label for="">Description</label>
                 <br>
-                <textarea class=" js-tinymce border-black border-2" type="text" name="description"
-                value="<?php echo $instructions ['description']?>"></textarea>
+                <input class=" js-tinymce border-black border-2" type="text" name="description"
+                value="<?php echo $instructions ['description']?>">
               </div>
 
 
               <div class="block">
                 <label for="">Materials</label>
                 <br>
-                <textarea class=" js-tinymce border-black border-2" type="text" name="materials"
-                value="<?php echo $instructions ['materials']?>"></textarea>
+                <input class=" js-tinymce border-black border-2" type="text" name="materials"
+                value="<?php echo $instructions ['materials']?>">
               </div>
 
               <div class="block">
                 <label for="">Instructions</label>
                 <br>
-                <textarea class=" js-tinymce border-black border-2" type="text" name="instructions"
-                value="<?php echo $instructions ['instructions']?>"></textarea>
+                <input class=" js-tinymce border-black border-2" type="text" name="instructions"
+                value="<?php echo $instructions ['instructions']?>">
               </div>
 
               <input class=" nline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4
