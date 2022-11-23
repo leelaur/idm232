@@ -6,11 +6,11 @@ $main_navigation = [
     ],
     [
         'title' => 'Categories',
-        'url' => 'categories.php',
+        'url' => 'categories/index.php',
     ],
     [
         'title' => 'Admin',
-        'url' => 'admin.php',
+        'url' => 'admin/index.php',
     ],
 ];
 
@@ -21,13 +21,13 @@ $main_navigation = [
             <h2> <a class="menu-link">Unfolded Origami </a> </h2>
             <nav>
                 <ul class="menu-list">
-                    <a href="#" class="menu-link">
+                    <a href="index.php" class="menu-link">
                         <li class="menu-list-item">Home</li>
                     </a>
-                    <a href="#" class="menu-link">
+                    <a href="categories/index.php" class="menu-link">
                         <li class="menu-list-item">Categories</li>
                     </a>
-                    <a href="#" class="menu-link">
+                    <a href="admin/index.php" class="menu-link">
                         <li class="menu-list-item menu-list--line">Admin</li>
                     </a>
                 </ul>

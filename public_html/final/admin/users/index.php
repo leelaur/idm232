@@ -18,6 +18,9 @@ $result = mysqli_query($db_connection, $query);
 
   <div class="px-4 sm:px-6 lg:px-8">
     <div class="sm:flex sm:items-center">
+
+    <?php include __DIR__ . '/../../_components/navigation-admin.php'; ?>
+    
       <div class="sm:flex-auto">
         <h1 class="text-xl font-semibold text-gray-900">Users</h1>
         <p class="mt-2 text-sm text-gray-700">A list of all the users in your account including their name, title, email
@@ -58,7 +61,8 @@ $result = mysqli_query($db_connection, $query);
                 <?php
     while ($user = mysqli_fetch_array($result)) {
         echo "<tr>
-                 <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$user['first_name']} {$user['last_name']}</td>
+                <td class='whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6'>{$user['id']}</td>
+                <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$user['first_name']} {$user['last_name']}</td>
                 <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$user['email']}</td>
                 <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$user['phone']}</td>
                 <td class='relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6'>
