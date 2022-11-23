@@ -7,13 +7,13 @@ if (isset($_GET['id'])) {
 }
 
 // get users data from database
-$query = "DELETE FROM instructions WHERE id = {$id}";
+$query = "DELETE FROM users WHERE id = {$id}";
 $result = mysqli_query($db_connection, $query);
 
 // Check there are no errors with our SQL statement
 if ($result) {
-    redirect_to('/admin/instructions');
+    redirect_to('/admin/users');
 } else {
-    $error_message = 'Could Not Delete Instructions';
-    redirect_to('/admin/instructions?error=' . $error_message);
+    $error_message = 'Could Not Delete User';
+    redirect_to('/admin/users?error=' . $error_message);
 }

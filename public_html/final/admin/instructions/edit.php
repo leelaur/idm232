@@ -27,31 +27,36 @@ if ($result-> num_rows > 0) {
             <form action="<?php echo site_url(); ?>/_includes/process-create-instructions.php" method="POST">
               <div class="block">
                 <label for="">Title</label>
-                <input class="border-black border-2" type="text" name="title">
+                <input class="border-black border-2" type="text" name="title" value="<?php echo $instructions ['title']?>">
               </div>
 
               <div class="block">
                 <label for="">Description</label>
                 <br>
-                <textarea class=" js-tinymce border-black border-2" name="description"></textarea>
+                <textarea class=" js-tinymce border-black border-2" type="text" name="description"
+                value="<?php echo $instructions ['description']?>"></textarea>
               </div>
 
 
               <div class="block">
                 <label for="">Materials</label>
                 <br>
-                <textarea class=" js-tinymce border-black border-2" name="materials"></textarea>
+                <textarea class=" js-tinymce border-black border-2" type="text" name="materials"
+                value="<?php echo $instructions ['materials']?>"></textarea>
               </div>
 
               <div class="block">
                 <label for="">Instructions</label>
                 <br>
-                <textarea class=" js-tinymce border-black border-2" name="instructions"></textarea>
+                <textarea class=" js-tinymce border-black border-2" type="text" name="instructions"
+                value="<?php echo $instructions ['instructions']?>"></textarea>
               </div>
 
-              <input
-                class="nline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
-                type="submit" value="submit">
+              <input class=" nline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4
+                  py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2
+                  focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto" type="submit" value="Submit">
+
+              <input type="hidden" name="id" value="<?php echo $instructions['id']?>">
             </form>
           </div>
         </div>
@@ -59,7 +64,6 @@ if ($result-> num_rows > 0) {
     </div>
   </div>
 </div>
-
 
 
 <?php include_once __DIR__ . '/../../_components/footer.php';
