@@ -60,6 +60,8 @@ $result = mysqli_query($db_connection, $query);
               </thead>
               <tbody class="divide-y divide-gray-200 bg-white">
                 <?php
+
+$site_url = site_url();
     while ($instructions = mysqli_fetch_array($result)) {
         echo "<tr>
                 <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['title']} </td>
@@ -67,8 +69,8 @@ $result = mysqli_query($db_connection, $query);
                 <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['materials']}</td>
                 <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['instructions']}</td>
                 <td class='relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6'>
-                <a href='http://localhost:8888/final/admin/instructions/edit.php?id={$instructions['id']}' class='text-indigo-600 hover:text-indigo-900'>Edit</a>
-                <a href='http://localhost:8888/final/admin/instructions/delete.php?id={$instructions['id']}'' class='text-indigo-600 hover:text-indigo-900'>Delete</a>
+                <a href='{$site_url}/admin/users/edit.php?id={$instructions['id']}' class='text-indigo-600 hover:text-indigo-900'>Edit</a>
+                <a href='{$site_url}/admin/users/delete.php?id={$instructions['id']}' class='text-indigo-600 hover:text-indigo-900'>Delete</a>
                 </td>
               </tr>";
     }

@@ -24,7 +24,7 @@ if ($result-> num_rows > 0) {
       <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
           <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
-            <form action="<?php echo site_url(); ?>/_includes/process-create-instructions.php" method="POST">
+            <form action="<?php echo site_url(); ?>/_includes/process-edit-instructions.php" method="POST">
               <div class="block">
                 <label for="">Title</label>
                 <input class="border-black border-2" type="text" name="title" value="<?php echo $instructions ['title']?>">

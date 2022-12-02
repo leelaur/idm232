@@ -51,7 +51,7 @@ function edit_instructions($title, $description, $materials, $instructions)
 function delete_instructions_by_id($id)
 {
     global $db_connection;
-    $query = "DELETE FROM instructions WHERE id = $id";
+    $query = "DELETE FROM instructions WHERE id = {$id}";
     $result = mysqli_query($db_connection, $query);
     return $result;
 }
