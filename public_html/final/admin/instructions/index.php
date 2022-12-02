@@ -37,7 +37,7 @@ $result = mysqli_query($db_connection, $query);
         <button type="button"
           class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto">
           <a href="<?php echo site_url() . '../../admin/instructions/create.php' ?>">
-            Add user</a></button>
+            Add Instructions</a></button>
       </div>
     </div>
     <div class="mt-8 flex flex-col">
@@ -64,13 +64,14 @@ $result = mysqli_query($db_connection, $query);
 $site_url = site_url();
     while ($instructions = mysqli_fetch_array($result)) {
         echo "<tr>
+        <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['id']} </td>
                 <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['title']} </td>
                 <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['description']}</td>
                 <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['materials']}</td>
                 <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['instructions']}</td>
                 <td class='relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6'>
-                <a href='{$site_url}/admin/users/edit.php?id={$instructions['id']}' class='text-indigo-600 hover:text-indigo-900'>Edit</a>
-                <a href='{$site_url}/admin/users/delete.php?id={$instructions['id']}' class='text-indigo-600 hover:text-indigo-900'>Delete</a>
+                <a href='{$site_url}/admin/instructions/edit.php?id={$instructions['id']}' class='text-indigo-600 hover:text-indigo-900'>Edit</a>
+                <a href='{$site_url}/admin/instructions/delete.php?id={$instructions['id']}' class='text-indigo-600 hover:text-indigo-900'>Delete</a>
                 </td>
               </tr>";
     }

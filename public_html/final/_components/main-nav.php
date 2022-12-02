@@ -2,15 +2,15 @@
 $main_navigation = [
     [
         'title' => 'Home',
-        'url' => 'index.php',
+        'url' => '../index.php',
     ],
     [
         'title' => 'Categories',
-        'url' => 'categories/index.php',
+        'url' => '../categories/index.php',
     ],
     [
         'title' => 'Admin',
-        'url' => 'admin/index.php',
+        'url' => '../admin/index.php',
     ],
 ];
 

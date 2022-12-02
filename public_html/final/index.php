@@ -8,7 +8,7 @@ include_once __DIR__ . '/_components/header.php';
          <div class="search wrapper">
             <div class="search-img--center">
                 <img src="https://via.placeholder.com/500x300" class="search-img">
-                <form class="search-bar" id="form"> 
+                <form action="<?php echo site_url(); ?>/search" method="GET"class="search-bar" id="form"> 
                     <input type="search" placeholder="Search..." class="search-box">
                     <button class="search-button">Search</button>
                 </form>
