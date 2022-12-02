@@ -379,3 +379,8 @@ margin: 30px 10% 0;
 .topSpace {
   min-height: 75px;
 }
+
+/*hamburger menu*/
+.hamburger-menu {
+  display: hidden;
+}
