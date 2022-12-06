@@ -121,8 +121,23 @@ table {
   border-spacing: 0;
 }
 
+/* FONTS */
+
+@font-face {
+  font-family: 'Single Day';
+  src: url('../fonts/SingleDay-Regular.woff2') format('woff2'),
+      url('../fonts/SingleDay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 /* CSS STARTS */
+* {
+color: red;
+}
+
 
 :root {
   --blue-color: #BFDAEC;
@@ -131,6 +146,9 @@ table {
 body {
   background-color: #ECEAE5;
 
+}
+footer {
+  background-color: var(--blue-color);
 }
 
 

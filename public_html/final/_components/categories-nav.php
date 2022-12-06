@@ -2,11 +2,11 @@
 $navigation_items = [
     [
         'title' => 'Holiday Origami',
-        'url' => site_url() . '/holiday.php',
+        'url' => site_url() . '/categories/holiday.php',
     ],
     [
         'title' => 'Animal Origami',
-        'url' => site_url() . '/animal.php',
+        'url' => site_url() . '/categories/animal.php',
     ],
 
 
