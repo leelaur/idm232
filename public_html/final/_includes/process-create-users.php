@@ -11,8 +11,6 @@ $last_name_value = sanitize_value($_POST['last_name']);
 $email_value = sanitize_value($_POST['email']);
 $phone_value = sanitize_value($_POST['phone']);
 
-// var_dump($_POST);
-// die;
 
 $result = add_user(
     $first_name_value,
@@ -22,10 +20,6 @@ $result = add_user(
 );
 
 
-
-// $result = add_user($first_name, $last_name, $email, $phone);
-// var_dump($first_name, $last_name, $email, $phone);
-// die();
 
 // Check there are no errors with our SQL statement
 if ($result) {

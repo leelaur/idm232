@@ -32,6 +32,7 @@ $result = mysqli_query($db_connection, $query);
           }
 
 ?>
+
       </div>
       <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
         <button type="button"
@@ -39,6 +40,7 @@ $result = mysqli_query($db_connection, $query);
           <a href="<?php echo site_url() . '/admin/instructions/create.php' ?>">
             Add Instructions</a></button>
       </div>
+    
     </div>
     <div class="mt-8 flex flex-col">
       <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
