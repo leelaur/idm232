@@ -1,12 +1,12 @@
 <?php
 $navigation_items = [
     [
-        'title' => 'Users',
-        'url' => site_url() . '/admin/users',
+        'title' => 'Holiday Origami',
+        'url' => site_url() . '/holiday.php',
     ],
     [
-        'title' => 'Instructions',
-        'url' => site_url() . '/admin/instructions',
+        'title' => 'Animal Origami',
+        'url' => site_url() . '/animal.php',
     ],
 
 

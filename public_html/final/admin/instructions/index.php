@@ -18,8 +18,6 @@ $result = mysqli_query($db_connection, $query);
 
   <div class="px-4 sm:px-6 lg:px-8">
     <div class="sm:flex sm:items-center">
-
-    <?php include __DIR__ . '/../../_components/navigation-admin.php'; ?>
     
       <div class="sm:flex-auto">
         <h1 class="text-xl font-semibold text-gray-900">Instructions</h1>

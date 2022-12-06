@@ -4,9 +4,12 @@ $page_title = 'Categories';
 include_once __DIR__ . '../../_components/header.php';
 ?>
 
+<?php include_once __DIR__ . '../../_components/headspace.php';?>
+
 <body>
-    <hr>
+
     <main>
+    <?php include __DIR__ . '/../_components/categories-nav.php'; ?>
 
         <div class="category-entire wrapper instruction-top">
             <menu class="category-menu" id="categories">
