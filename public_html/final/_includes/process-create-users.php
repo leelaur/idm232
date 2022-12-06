@@ -12,7 +12,7 @@ $email_value = sanitize_value($_POST['email']);
 $phone_value = sanitize_value($_POST['phone']);
 
 
-$result = add_user(
+$result = add_users(
     $first_name_value,
     $last_name_value,
     $email_value,
