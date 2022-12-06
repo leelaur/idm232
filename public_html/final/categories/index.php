@@ -5,25 +5,6 @@ include_once __DIR__ . '../../_components/header.php';
 ?>
 
 <body>
-    <header class="menu-color">
-        <div class="menu">
-            <h2> <a class="menu-link">Unfolded Origami </a> </h2>
-            <nav>
-                <ul class="menu-list">
-                    <a href="leelaur.com" class="menu-link">
-                        <li class="menu-list-item">Home</li>
-                    </a>
-                    <a href="leelaur.com" class="menu-link">
-                        <li class="menu-list-item">Categories</li>
-                    </a>
-                    <a href="leelaur.com" class="menu-link">
-                        <li class="menu-list-item menu-list--line">Admin</li>
-                    </a>
-                </ul>
-            </nav>
-        </div>
-        <hr>
-    </header>
     <hr>
     <main>
 
