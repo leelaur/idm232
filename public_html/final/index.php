@@ -9,7 +9,7 @@ include_once __DIR__ . '/_components/header.php';
             <div class="search-img--center">
                 <img src="dist/images/search-img.png" class="search-img">
                 <form action="<?php echo site_url(); ?>/search" method="GET"class="search-bar" id="form"> 
-                    <input type="search" placeholder="Search..." class="search-box">
+                    <input type="search" placeholder="Search..." class="search-box"name="search">
                     <button class="search-button">Search</button>
                 </form>
             </div>

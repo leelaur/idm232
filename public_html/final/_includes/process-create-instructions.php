@@ -11,8 +11,6 @@ $description_value = sanitize_value ($_POST['description']);
 $materials_value = sanitize_value($_POST['materials']);
 $instructions_value = sanitize_value($_POST['instructions']);
 
-var_dump($_POST);
-die;
 
 $result = add_instructions(
     $title_value,
