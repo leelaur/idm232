@@ -135,7 +135,7 @@ table {
 
 /* CSS STARTS */
 * {
-color: red;
+font-family: 'Single Day';
 }
 
 
@@ -399,6 +399,56 @@ margin: 30px 10% 0;
 }
 
 /*hamburger menu*/
-.hamburger-menu {
-  display: hidden;
+
+/* Responsive menu */
+.menu-img-close, .menu-img{
+  display: none;
 }
+
+@media only screen and (max-width: 700px) {
+  
+  .menu-list {
+    display: none;
+
+  }
+
+  .hamburger-menu, .menu-img {
+    display: block;
+
+    
+  }
+
+  .menu-img {
+    width:75px;
+  }
+
+  .menu-img:hover {
+    cursor:pointer;
+  }
+  .menu-list-item, .menu-list--line{
+    border: none ;
+
+  }
+
+  .menu-list-vertical {
+    flex-wrap: column;
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    border: dashed;
+    border-top: none;
+    z-index:-10;
+    background-color: var(--blue-color);
+  }
+  
+  .menu-img-close {
+    width:25px;
+    display: none;
+    padding: 25px;
+  }
+  .menu-img-close:hover {
+    cursor: pointer;
+  }
+}
+
+

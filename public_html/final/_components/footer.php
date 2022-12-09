@@ -11,7 +11,9 @@
         </nav>
     </footer>
 
-  <script src="<?php echo site_url(); ?>/dist/scripts/main.js"></script>
+  <script src="<?php echo site_url(); ?>/dist/scripts/main.js">
+
+</script>
   </body>
 
   </html>

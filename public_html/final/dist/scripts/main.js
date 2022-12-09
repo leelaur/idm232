@@ -1,5 +1,6 @@
 console.log("Script Loaded");
 
+
 function initTinyMce() {
   tinymce.init({
     selector: ".js-tinymce",
@@ -15,4 +16,30 @@ function initTinyMce() {
 }
 
 initTinyMce();
-  
+
+
+const menuBtn= document.getElementById('menu-img');
+const menuItems= document.querySelector('.menu-list');
+const closeBtn = document.querySelector('.menu-img-close');
+
+
+menuBtn.addEventListener ('click', ()=>
+{
+// alert ('this is an elert');
+menuBtn.style.display="none"
+menuItems.style.display="block";
+closeBtn.style.display="block";
+menuItems.classList.add('menu-list-vertical');
+
+});
+
+closeBtn.addEventListener ('click', ()=>
+{
+// alert ('this is an elert');
+menuBtn.style.display="block"
+menuItems.style.display="none";
+closeBtn.style.display="none";
+menuItems.classList.remove('menu-list-vertical');
+
+});
+
