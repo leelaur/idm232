@@ -147,9 +147,7 @@ body {
   background-color: #ECEAE5;
 
 }
-footer {
-  background-color: var(--blue-color);
-}
+
 
 
 /* MENU */
@@ -161,6 +159,10 @@ footer {
   align-items: center;
   margin: 0 10%;
 
+}
+
+.menu-img-close, .menu-img{
+  display: none;
 }
 
 .menu-link {
@@ -342,7 +344,8 @@ footer {
 height: 150px;
 display: flex;
 justify-content: space-between;
-margin: 30px 10% 0;
+padding: 30px 10% 0;
+background-color: var(--blue-color);
 }
 
 .footer-menu-list {
@@ -401,9 +404,7 @@ margin: 30px 10% 0;
 /*hamburger menu*/
 
 /* Responsive menu */
-.menu-img-close, .menu-img{
-  display: none;
-}
+
 
 @media only screen and (max-width: 700px) {
   

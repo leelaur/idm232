@@ -1,7 +1,7 @@
 <?php
-include_once __DIR__ . '../../app.php';
+include_once __DIR__ . '/../app.php';
 $page_title = 'Categories';
-include_once __DIR__ . '../../_components/header.php';
+include_once __DIR__ . '/../_components/header.php';
 ?>
 
 <?php include_once __DIR__ . '../../_components/headspace.php';?>
@@ -65,17 +65,7 @@ include_once __DIR__ . '../../_components/header.php';
         </div>
     </main>
     <hr>
-    <footer>
-        <p> Unfolded Origami</p>
-        <nav>
-            <ul class="footer-menu-list">
-                <li class="footer-list-items">Categories</li>
-                <li class="">Search</li>
-                <li class="">Admin</li>
-            </ul>
-        </nav>
 
-    </footer>
-    <script src="main.js"></script>
+    <?php include_once __DIR__ . '/../_components/footer.php';?>
 </body>
 </html>
