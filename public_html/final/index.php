@@ -13,7 +13,7 @@ include_once __DIR__ . '/_components/header.php';
 
             <h1 class="title"> Welcome to Unfolded Origami! </h1>
             <p style="text-align:center;"> 
-                Learn and make origami from our 40+ instructions. Choose from our featured origami or choose a level of difficulty to get started.
+                Learn and make origami from our 40+ instructions. Choose from our featured origami or choose any level of difficulty in categories to get started.
                  </p>
             </div>
                 <img src="dist/images/search-img.png" class="search-img">

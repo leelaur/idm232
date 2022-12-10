@@ -19,9 +19,9 @@ $result = mysqli_query($db_connection, $query);
     <div class="px-4 sm:px-6 lg:px-8">
       <div class="sm:flex sm:items-center">
       
-        <div class="sm:flex-auto">
-          <h1 class="text-xl font-semibold text-gray-900">Instructions</h1>
-          <p class="mt-2 text-sm text-gray-700">A list of all the instructions including the title, level, description, etc.
+        <div class="sm:flex-auto instructions-text">
+          <h1 class="text-xl font-semibold text-gray-900 title">Instructions</h1>
+          <p class="mt-2 text-sm text-gray-700 text-center">A list of all the instructions including the title, level, description, etc.
             and role.</p>
           <?php
           // If error query param exist, show error message
@@ -30,14 +30,15 @@ $result = mysqli_query($db_connection, $query);
             }
 
   ?>
-
-        </div>
-        <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+  <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none add-btn">
           <button type="button"
-            class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto">
-            <a href="<?php echo site_url() . '/admin/instructions/create.php' ?>">
-              Add Instructions</a></button>
+            class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto add-inst-btn">
+            <a href="<?php echo site_url() . '/admin/instructions/create.php' ?>" class="add-inst-btn--link">
+              Add Instructions</a>
+            </button>
         </div>
+        </div>
+      
       
       </div>
       <div class="mt-8 flex flex-col">
