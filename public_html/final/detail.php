@@ -13,9 +13,9 @@ include_once __DIR__ . '/_components/header.php';
 ?>
 
 <?php
-// get users data from database
 $query = "SELECT * FROM instructions WHERE id = {$_GET['id']}";
 $result = mysqli_query($db_connection, $query);
+
 ?>
           
 <?php
@@ -24,12 +24,15 @@ $result = mysqli_query($db_connection, $query);
         echo "
                 <div class=''>
                     <div>
-                        <h2 class=''>{$get_instructions['title']}</h2>
+                        <h2 class=''>{$instructions['title']}</h2>
+                        <p class=''>{$instructions['level']}</p>
                     </div>
+                    <img class='' width='500px' height='500px' src='{$site_url}/{$instructions['image']}' alt=''>
+
                     <div>
-                        <p class=''>{$get_instructions['description']}</p>
-                        <p class=''>{$get_instructions['materials']}</p>
-                        <p class=''>{$get_instructions['instructions']}</p>
+                        <p class=''>{$instructions['description']}</p>
+                        <p class=''>{$instructions['materials']}</p>
+                        <p class=''>{$instructions['instructions']}</p>
                     </div>
 
         ";

@@ -10,17 +10,19 @@ include_once __DIR__ . '/../_components/header.php';
 
 
 <?php
-// or if there can be values other than 0 and 1
-$level_select = array_keys(array_column($instructions, 'selected'), 'beginner');
 
-$query = "SELECT * FROM instructions ORDER BY level ASC";
+$query = "SELECT * FROM instructions WHERE level='Beginner'";
+$result = mysqli_query($db_connection, $query);
+?>
+
+<?php
     $site_url = site_url();
     while ($instructions = mysqli_fetch_array($result) ) {
 
         echo "
                 <div class=''>
                     <div>
-                        <h2 class='origami-instruction'>{$instructions['level']}</h2>
+                        <h2 class='origami-instruction'>{$instructions['title']}</h2>
                     </div>
                 </div>
 
