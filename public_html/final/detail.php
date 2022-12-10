@@ -20,7 +20,7 @@ $result = mysqli_query($db_connection, $query);
           
 <?php
     $site_url = site_url();
-    while ($get_instructions = mysqli_fetch_array($result)) {
+    while ($instructions = mysqli_fetch_array($result)) {
         echo "
                 <div class=''>
                     <div>
