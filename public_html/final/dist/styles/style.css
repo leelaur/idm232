@@ -293,6 +293,7 @@ list-style: none;
 
 
 
+
 /* origami instructions */ 
 
 .all-origami {
@@ -446,16 +447,24 @@ align-items: center;
 
 /* categories level */
 .level-btn {
-  background-color: var(--blue-color);
+  background-color: var(--white);
   padding: 10px 30px;
   text-decoration: none;
+  border: dashed 1px;
 
 
+
+}
+
+.level-btn:hover {
+  background-color: var(--blue-color);
 }
 .all-level-btn {
   display: flex;
   flex: row;
-  margin: 3rem 0;
+  /* margin: 1rem 0; */
+  margin-top: 3rem;
+  margin-bottom: 100px;
   justify-content: center;
 
   width: auto;
@@ -474,6 +483,10 @@ align-items: center;
   width: 100%;
 } */
 
+.level-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 /* TABLE */
 main {
@@ -482,8 +495,6 @@ main {
   max-width: 80%;
 }
 table {
-  
-
   width: 100%;
 margin: 4rem 0;
 border-radius: 5px;
@@ -497,11 +508,9 @@ tr {
 
 }
 td {
-  /* border-left:  0.5px solid #00000080;
-  border-right: 0.5px solid #00000080; */
   vertical-align: middle;
   text-align: left;
-  padding: 1rem 10px;
+  padding: 1rem 20px;
   white-space: wrap;
   overflow-x: hidden;
   background-color: var(--blue-color); 
@@ -569,6 +578,12 @@ th{
   text-decoration: none;
 color: var(--dark-gray);
 font-size: var(--medium-font);
+}
+/* error */
+.error {
+  color: red;
+  text-align: center;
+  margin: auto;
 }
 /*Input fields */
 
@@ -689,6 +704,16 @@ display: inline-block;
     display: block;
 
     
+  }
+  .level-nav {
+    display: flex;
+    flex-direction: column;
+ 
+  }
+
+  .all-level-btn {
+    margin: 1rem 0;
+    margin-bottom: 3rem;
   }
 
   .menu-img {

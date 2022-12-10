@@ -24,7 +24,7 @@ $navigation_items = [
 <div class="mb-8">
   </div>
   <div class="hidden sm:block all-btn">
-    <nav class="isolate flex divide-x divide-gray-200 rounded-lg shadow" aria-label="Tabs">
+    <nav class="isolate flex divide-x divide-gray-200 rounded-lg shadow level-nav" aria-label="Tabs">
       <!-- Current: "text-gray-900", Default: "text-gray-500 hover:text-gray-700" -->
       <?php
 
