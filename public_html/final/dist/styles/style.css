@@ -402,6 +402,8 @@ align-items: center;
   font-size: 18pt;
   text-decoration: none;
   margin-bottom: 5px;
+  font-family: 'Single Day';
+  font-size: var(--large-font);
 
 }
 
@@ -414,7 +416,8 @@ align-items: center;
 .instructions-link{
   text-decoration: none;
     width: 400px;
-  height: 400px;
+    height: 400px;
+    white-space: none;
 }
 
 .add-inst-btn {
@@ -542,6 +545,7 @@ th{
 color: var(--dark-gray);
 font-size: var(--medium-font);
 }
+/*Input fields */
 
 /* footer */
 
@@ -701,3 +705,31 @@ display: inline-block;
 }
 
 
+/*Details page */
+
+.details-wrapper {
+  width: 100%;
+
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.details-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.details-img-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 0 ;
+}
+.details-section{
+  margin: 2rem 0;
+}
+
+.details-subtitle {
+  font-size: var(--large-font);
+}

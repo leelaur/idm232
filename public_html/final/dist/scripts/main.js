@@ -4,7 +4,7 @@ console.log("Script Loaded");
 function initTinyMce() {
   tinymce.init({
     selector: ".js-tinymce",
-    height: 500,
+    height: 200,
     menubar: false,
     plugins:
       "anchor autolink  codesample  link lists searchreplace table visualblocks wordcount",

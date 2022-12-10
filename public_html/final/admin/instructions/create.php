@@ -18,7 +18,7 @@ $result = mysqli_query($db_connection, $query);
   <div class="px-4 sm:px-6 lg:px-8">
     <div class="sm:flex sm:items-center">
       <div class="sm:flex-auto">
-        <h1 class="text-xl font-semibold text-gray-900">Create Origami Instructions</h1>
+        <h1 class="text-xl font-semibold text-gray-900 title">Create Origami Instructions</h1>
       </div>
     </div>
     <div class="mt-8 flex flex-col">

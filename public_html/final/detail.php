@@ -23,16 +23,19 @@ $result = mysqli_query($db_connection, $query);
     while ($instructions = mysqli_fetch_array($result)) {
         echo "
                 <div class=''>
-                    <div>
-                        <h2 class=''>{$instructions['title']}</h2>
-                        <p class=''>{$instructions['level']}</p>
-                    </div>
-                    <img class='' width='500px' height='500px' src='{$site_url}/{$instructions['image']}' alt=''>
+                <div>
+                <h1 class='title '>{$instructions['title']}</h1>
+                <p class='text-center'>Level: {$instructions['level']}</p>
+  
+            </div>
+            <div class='details-img-container'>
+                        <img class='details-img' width='500px' height='500px' src='{$site_url}/{$instructions['image']}' alt=''>
+            </div>
 
-                    <div>
-                        <p class=''>{$instructions['description']}</p>
-                        <p class=''>{$instructions['materials']}</p>
-                        <p class=''>{$instructions['instructions']}</p>
+                    <div class='details-wrapper'>
+                        <p class='details-section'>{$instructions['description']}</p>
+                        <p class='details-section'><div class='details-subtitle'>Materials: <div>{$instructions['materials']}</p>
+                        <p class='details-section'><div class='details-subtitle'>Instructions:</div>{$instructions['instructions']}</p>
                     </div>
 
         ";

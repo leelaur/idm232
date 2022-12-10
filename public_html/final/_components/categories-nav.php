@@ -1,6 +1,10 @@
 <?php
 $navigation_items = [
     [
+      'title' => 'All',
+      'url' => site_url() . '/categories/index.php',
+    ],
+    [
         'title' => 'Beginner',
         'url' => site_url() . '/categories/beginner.php',
     ],
@@ -12,6 +16,7 @@ $navigation_items = [
         'title' => 'Advanced',
         'url' => site_url() . '/categories/advanced.php',
     ],
+
 
 
 ];
