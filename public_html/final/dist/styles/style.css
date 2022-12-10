@@ -367,6 +367,13 @@ justify-items: center;
   color: var(--dark-gray);
 }
 
+@media only screen and (max-width: 600px) {
+
+  .search-box {
+    width: 200px;
+  }
+}
+
 .search-button {
   width: 90px;
   height: 40px;
