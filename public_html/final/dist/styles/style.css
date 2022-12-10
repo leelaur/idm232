@@ -144,11 +144,15 @@ h1, h2,h3, h4, h5, h6, .title {
 
 
 :root {
+  --background:#ECEAE5;
   --blue-color: #BFDAEC;
   --light-blue: #e4e9ed;
   --dark-gray: #383838; 
   --white: #fff;
   --black: #000;
+  --large-font:20pt;
+  --medium-font: 16pt;
+  --small-font:14pt;
 }
 
 body {
@@ -214,6 +218,8 @@ list-style: none;
   padding: 29px 10px;
   width: 100px;
   color: var(--dark-gray);
+  font-family: 'Single Day';
+  font-size: var(--medium-font);
 }
 
 .menu-list--middle {
@@ -221,7 +227,7 @@ list-style: none;
 }
 
 .menu-list-item:hover {
-  background-color: var(--light-blue);
+  background-color: var(--background);
   transition: all .2s ease-in-out;
 }
 
@@ -458,11 +464,14 @@ main {
 
 footer {
 height: 150px;
-display: flex;
-justify-content: space-between;
 padding: 30px 10% 0;
 background-color: var(--blue-color);
 z-index: 100;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-menu-list {
@@ -470,8 +479,28 @@ z-index: 100;
   flex-direction: column;
   list-style: none;
   gap: 1rem;
+
+  font-family: 'Single Day';
+  font-size: var(--medium-font);
 }
 
+footer h2 {
+  font-size: var(--large-font);
+  
+}
+
+.footer-r {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.copyright {
+display: inline-block;
+  font-family: 'Single Day';
+  font-size: 12pt;
+  color: var(--dark-gray)
+}
 /*responsive */
 
 @media only screen and (max-width: 1500px) {
