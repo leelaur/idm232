@@ -12,6 +12,7 @@ $image_value = sanitize_value($_POST['image']);
 $description_value = sanitize_value($_POST['description']);
 $materials_value = sanitize_value($_POST['materials']);
 $instructions_value = sanitize_value($_POST['instructions']);
+$id_value = sanitize_value($_POST['id']);
 
 // Create a SQL statement to insert the data into the database
 $query = "UPDATE instructions SET title = '{$title_value}', level = '{$level_value}', image = '{$image_value}', description = '{$description_value}', materials = '{$materials_value}', instructions = '{$instructions_value}' WHERE id = {$id_value}";
