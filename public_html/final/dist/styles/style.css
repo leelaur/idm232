@@ -132,6 +132,25 @@ table {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url('OpenSans-Italic.woff2') format('woff2'),
+      url('OpenSans-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+      url('../fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 /* CSS STARTS */
 * {
@@ -140,7 +159,30 @@ font-family: 'Single Day';
 
 h1, h2,h3, h4, h5, h6, .title {
   font-family: 'Single Day';
+  text-align: center;
 }
+
+h1 {
+  font-size: 24pt;
+}
+h2 {
+  font-size: var(--large-font);
+}
+
+p {
+  font-family: 'Open Sans';
+}
+
+.title, .subtitle {
+  margin: 2rem 0;
+}
+
+.subtitle {
+text-decoration-style: wavy;
+}
+
+
+
 
 
 :root {
@@ -292,8 +334,8 @@ justify-items: center;
   max-width: 70%;
 }
 .search-img--center {
-  padding-top: 8%;
-  padding-bottom: 10%;
+  padding-top: 2rem;
+  padding-bottom: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -499,7 +541,7 @@ footer h2 {
 display: inline-block;
   font-family: 'Single Day';
   font-size: 12pt;
-  color: var(--dark-gray)
+  color: var(--dark-gray);
 }
 /*responsive */
 
@@ -553,11 +595,20 @@ display: inline-block;
 /* Responsive menu */
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   
   .menu-list {
     display: none;
 
+  }
+
+  .menu-list-item {
+    border-top: dashed;
+    border-bottom: dashed;
+  }
+
+  .menu-list-item:hover {
+    width: 100%;
   }
 
   .hamburger-menu, .menu-img {
@@ -586,7 +637,7 @@ display: inline-block;
     border: dashed;
     border-top: none;
     z-index:-10;
-    background-color: var(--blue-color);
+    background-color: var(--white);
   }
   
   .menu-img-close {
