@@ -26,3 +26,5 @@ $document_title = $page_title . ' | ' . $site_title; // Home | Unfolded Origami
 
   <!-- Main Content Begins -->
   <?php include __DIR__ . '/main-nav.php'; ?>
+  <main>
+

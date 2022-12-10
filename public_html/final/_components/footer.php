@@ -1,4 +1,5 @@
   <!-- Main Content Ends -->
+</main>
   <hr>
   <footer>
         <p>  <a href="<?php echo site_url(); ?>/index.php" class="menu-link"> Unfolded Origami </a> </p>

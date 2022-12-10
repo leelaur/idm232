@@ -141,6 +141,10 @@ table {
 
 :root {
   --blue-color: #BFDAEC;
+  --light-blue: #e4e9ed;
+  --dark-gray: #383838; 
+  --white: #fff;
+  --black: #000;
 }
 
 body {
@@ -148,6 +152,13 @@ body {
 
 }
 
+
+/* horizontal line */
+hr {
+  border-top: dashed 1.5px var(--dark-gray) ;
+  margin: 0;
+
+}
 
 
 /* MENU */
@@ -167,6 +178,7 @@ body {
 
 .menu-link {
 text-decoration: none;
+color: var(--dark-gray);
 }
 
 .menu-color {
@@ -177,27 +189,40 @@ text-decoration: none;
   
 }
 
+.title-nav {
+  font-size: 24pt;
+}
+
+
+
 .menu-list {
 display: flex;
 text-align: center;
 list-style: none;
 
+
 }
 
 .menu-list-item{
-  border-left: dashed ;
+  border-left: dashed var(--dark-gray) ;
+  border-right: dashed var(--dark-gray);
   display: block;
   padding: 29px 10px;
   width: 100px;
+  color: var(--dark-gray);
 }
-.menu-list--line {
-  border-right:dashed;
+
+.menu-list--middle {
+  border: none
 }
-/* horizontal line */
-hr {
-  border-style: dashed;
-  margin: 0;
+
+.menu-list-item:hover {
+  background-color: var(--light-blue);
+  transition: all .2s ease-in-out;
 }
+
+
+
 /* category entire */
 
 .category-entire {
@@ -208,7 +233,7 @@ margin-top: 50px;
 }
 
 /* Category menu */
-.wrapper {
+.body-wrapper {
   margin-left: auto;
   margin-right: auto;
   max-width: 80%;
@@ -219,19 +244,15 @@ margin-top: 50px;
 
 .all-origami {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 50px;
-  justify-self: center;
-
-}
-
-.featured-title {
+  grid-template-columns: 400px 400px 400px;
+  grid-auto-rows: 400px;
+  gap: 25px;
   width: 100%;
-
-  margin-bottom: 5%;
-  margin-left: 50px;
+  margin: 0 0 100px 0;
+  justify-content: center;
+/* justify-items: center; */
 }
+
 
 .origami-instruction {
   justify-self: center;
@@ -243,16 +264,17 @@ margin-top: 50px;
 /* search */
 
 .search {
-  height: 70vh;
-  padding-top: 80px;
-  /* background-color: aqua; */
+  height: 40vh;
+  padding-top: 20px;
+
 
 }
 .search-img {
-  max-width: 80%;
+  max-width: 70%;
 }
 .search-img--center {
   padding-top: 8%;
+  padding-bottom: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -262,6 +284,8 @@ margin-top: 50px;
   margin: auto;
   display: flex;
   margin-top: 30px;
+  border: 1px dashed var(--dark-gray);
+  border-radius: 5px;
 }
 
 .search-box {
@@ -278,26 +302,64 @@ margin-top: 50px;
   height: 40px;
   border-radius: 5px 0 0 5px;
   outline: none;
-  color: #9DBFAF;
+  color: var(--dark-gray);
 }
 
 .search-button {
-  width: 70px;
+  width: 90px;
   height: 40px;
-  border: 1px solid var(--blue-color);
+  border: none;
+  border-left: 1px dashed var(--dark-gray) ;
   background: var(--blue-color);
   text-align: center;
-  color: #fff;
+  color: #000;
   border-radius: 0 5px 5px 0;
   text-decoration: none;
   cursor: pointer;
   font-size: 20px;    
+ 
+
 }
 
+/*cards */
+.cards {
+  background-color: var(--blue-color);
+  display:flex;
+  flex-direction: column;
+align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  /* padding: 25px 0; */
+  text-align: center;
+  text-decoration: none;
+}
+
+.cards-img {
+  width: 200px;
+  height: 200px;
+}
+
+.title-txt {
+  font-size: 18pt;
+  text-decoration: none;
+  margin-bottom: 5px;
+
+}
+
+.level-txt {
+  font-size: 14pt;
+}
+
+.instructions-link{
+  text-decoration: none;
+    width: 300px;
+  height: 300px;
+}
 /* footer */
 
 main {
-  min-height: 90vh;
+  min-height: 85vh;
 }
 
 footer {
@@ -306,6 +368,7 @@ display: flex;
 justify-content: space-between;
 padding: 30px 10% 0;
 background-color: var(--blue-color);
+z-index: 100;
 }
 
 .footer-menu-list {
@@ -317,11 +380,11 @@ background-color: var(--blue-color);
 
 /*responsive */
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1500px) {
 
   .all-origami {
-      grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+      grid-template-columns: 400px 400px;
+  grid-auto-rows: 400px;
   }
 }
 
@@ -342,8 +405,9 @@ background-color: var(--blue-color);
 
 @media only screen and (max-width: 900px) {
   .all-origami {
-      grid-template-columns: 1fr ;
-  grid-template-rows: auto;
+      grid-template-columns: 400px ;
+  grid-auto-rows: 400px;
+
   }
 
   .origami-img {
@@ -410,6 +474,23 @@ background-color: var(--blue-color);
   .menu-img-close:hover {
     cursor: pointer;
   }
+
+  /* search responsive*/
+  .search-bar {
+    max-width: 400px;
+  }
 }
 
 
+/* TABLE */
+main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
+table {
+  background-color: var(--blue-color);
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 100%;
+}

@@ -8,7 +8,7 @@ include_once __DIR__ . '/../_components/header.php';
 
 <body>
 
-    <main>
+
     <?php include __DIR__ . '/../_components/categories-nav.php'; ?>
     
 
@@ -22,7 +22,7 @@ $result = mysqli_query($db_connection, $query);
 
 
  <?php include_once __DIR__ . '/../_components/footer.php'; ?>
-    </main>
+
 
     <?php include_once __DIR__ . '/../_components/footer.php';?>
 </body>

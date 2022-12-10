@@ -4,7 +4,8 @@ $page_title = 'Home';
 include_once __DIR__ . '/_components/header.php';
 ?>
 
-<main>
+<?php include_once __DIR__ . '/_components/headspace.php';?>
+
          <div class="search wrapper">
             <div class="search-img--center">
                 <img src="dist/images/search-img.png" class="search-img">
@@ -14,7 +15,7 @@ include_once __DIR__ . '/_components/header.php';
                 </form>
             </div>
         </div>
-        <hr>
+
         <?php
 // get users data from database
 $query = "SELECT * FROM instructions";
@@ -23,9 +24,10 @@ $result = mysqli_query($db_connection, $query);
           
 
         </div>
+<div class="all-origami">
 
         <?php include __DIR__ . '/_components/card.php'; ?>
-    </main>
-    
+
+</div>
 
 <?php include_once __DIR__ . '/_components/footer.php';
