@@ -17,9 +17,11 @@ include_once __DIR__ . '/../_components/header.php';
 $query = "SELECT * FROM instructions ORDER BY title ASC";
 $result = mysqli_query($db_connection, $query);
 ?>
+
+<div class="all-origami">
           
           <?php include __DIR__ . '/../_components/card.php'; ?>
-
+</div>
 
  <?php include_once __DIR__ . '/../_components/footer.php'; ?>
 

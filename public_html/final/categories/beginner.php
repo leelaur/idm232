@@ -8,6 +8,7 @@ include_once __DIR__ . '/../_components/header.php';
 
 <?php include __DIR__ . '/../_components/categories-nav.php'; ?>
 
+
 <?php
 
 $query = "SELECT * FROM instructions WHERE level='Beginner'";
@@ -19,11 +20,14 @@ $result = mysqli_query($db_connection, $query);
     while ($instructions = mysqli_fetch_array($result) ) {
 
         echo "
-                <div class=''>
-                    <div>
-                        <h2 class='origami-instruction'>{$instructions['title']}</h2>
-                    </div>
+                <div class='cards all-origami'>
+                    <img class='cards-img' src='{$instructions['image']}' alt=''>                
+                    <div class=''>
+                        <p class='title-txt'>{$instructions['title']}</p>
+                        <p class='level-txt'> Level: {$instructions['level']}</p>
+                    </div> 
                 </div>
+
 
         ";
     }
