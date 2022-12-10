@@ -323,8 +323,17 @@ justify-items: center;
 
 }
 .search-img {
-  max-width: 70%;
+  width: 50%;
 }
+
+
+@media only screen and (max-width: 1200px) {
+
+  .search-img {
+    width: 100%;
+  }
+}
+
 .search-img--center {
   padding-top: 2rem;
   padding-bottom: 5%;
