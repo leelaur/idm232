@@ -30,6 +30,11 @@ if ($result-> num_rows > 0) {
                 <input class="border-black border-2" type="text" name="title" value="<?php echo $instructions ['title']?>">
               </div>
 
+              <div>
+              <label for="">Image</label>
+              <input class="border-black border-2" type="text" name="title" value="<?php echo $instructions ['image']?>">
+              </div>
+
               <div class="block">
                 <label for="">Description</label>
                 <br>

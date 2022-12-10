@@ -7,12 +7,12 @@
  * @param  string $price - service price of the service
  * @return object - mysqli_result
  */
-function add_instructions($title, $description, $materials, $instructions)
+function add_instructions($title, $image, $description, $materials, $instructions)
 {
     global $db_connection;
     $query = 'INSERT INTO instructions';
-    $query .= ' (title, description, materials, instructions)';
-    $query .= " VALUES ('$title', '$description', '$materials', '$instructions')";
+    $query .= ' (title, image, description, materials, instructions)';
+    $query .= " VALUES ('$title', '$image', '$description', '$materials', '$instructions')";
     $result = mysqli_query($db_connection, $query);
     return $result;
 }
@@ -42,7 +42,7 @@ function edit_instructions($title, $description, $materials, $instructions)
 {
     global $db_connection;
     $query = 'UPDATE instructions';
-    $query .= " SET title = '{$title}', description = '{$description}', materials = '{$materials}', instructions = '{$instructions}'";
+    $query .= " SET title = '{$title}', image = '{$image}', description = '{$description}', materials = '{$materials}', instructions = '{$instructions}'";
     $query .= " WHERE id = $id";
     $result = mysqli_query($db_connection, $query);
     return $result;

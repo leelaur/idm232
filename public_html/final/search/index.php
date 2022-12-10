@@ -20,8 +20,7 @@ $query .= " OR description LIKE '%{$search}%'";
 $query .= " OR materials LIKE '%{$search}%'";
 $query .= " OR instructions LIKE '%{$search}%'";
 $results = mysqli_query($db_connection, $query);
-// var_dump($search);
-// die();
+
 
 // Check if was have more than 0 results from db
 if ($results->num_rows > 0) {

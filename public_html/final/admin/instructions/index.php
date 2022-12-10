@@ -50,6 +50,7 @@ $result = mysqli_query($db_connection, $query);
                   <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">ID</th>
                   <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">Title
                   </th>
+                  <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Image</th>
                   <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Description</th>
                   <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Materials</th>
                   <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Instructions</th>
@@ -66,6 +67,7 @@ $site_url = site_url();
         echo "<tr>
         <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['id']} </td>
                 <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['title']} </td>
+                <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['image']} </td>
                 <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['description']}</td>
                 <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['materials']}</td>
                 <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['instructions']}</td>

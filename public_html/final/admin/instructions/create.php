@@ -30,6 +30,11 @@ $result = mysqli_query($db_connection, $query);
                 <label for="">Title</label>
                 <input class="border-black border-2" type="text" name="title">
               </div>
+              <div>
+                
+              <label for="">Image</label>
+                <input class="border-black border-2" type="text" name="title">
+              </div>
 
               <div class="block">
                 <label for="">Description</label>
