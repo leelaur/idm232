@@ -20,14 +20,13 @@ $result = mysqli_query($db_connection, $query);
     while ($instructions = mysqli_fetch_array($result) ) {
 
         echo "
-                <div class='cards all-origami'>
+                <div class='cards all-origami cards-level'>
                     <img class='cards-img' src='{$instructions['image']}' alt=''>                
                     <div class=''>
                         <p class='title-txt'>{$instructions['title']}</p>
                         <p class='level-txt'> Level: {$instructions['level']}</p>
                     </div> 
                 </div>
-
 
         ";
     }

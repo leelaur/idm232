@@ -50,10 +50,8 @@ $result = mysqli_query($db_connection, $query);
                     <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">ID</th>
                     <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">Title</th>
                     <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Level</th>
-                    <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Image</th>
                     <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Description</th>
-                    <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Materials</th>
-                    <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Instructions</th>
+
                     <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-6">
                       <span class="sr-only">Edit</span>
                     </th>
@@ -68,13 +66,12 @@ $result = mysqli_query($db_connection, $query);
           <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['id']} </td>
                   <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['title']} </td>
                   <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['level']}</td>
-                  <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['image']} </td>
                   <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['description']}</td>
-                  <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['materials']}</td>
-                  <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$instructions['instructions']}</td>
                   <td class='relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6'>
+                  <div class='edit-btn'>
                   <a href='{$site_url}/admin/instructions/edit.php?id={$instructions['id']}' class='text-indigo-600 hover:text-indigo-900'>Edit</a>
                   <a href='{$site_url}/admin/instructions/delete.php?id={$instructions['id']}' class='text-indigo-600 hover:text-indigo-900'>Delete</a>
+                  </div>
                   </td>
                 </tr>";
       }

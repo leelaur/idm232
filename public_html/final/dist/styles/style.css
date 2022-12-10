@@ -246,7 +246,7 @@ margin-top: 50px;
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-auto-rows: 400px;
-  gap: 25px;
+  gap: 50px;
   width: 100%;
   margin: 0 0 100px 0;
   justify-content: center;
@@ -335,6 +335,11 @@ align-items: center;
   text-decoration: none;
 }
 
+.cards:hover {
+  box-shadow: 20px -12px var(--white);
+  transition: 0.1s ease-in-out;
+}
+
 .cards-img {
   width: 200px;
   height: 200px;
@@ -351,11 +356,86 @@ align-items: center;
   font-size: 14pt;
 }
 
+
+
 .instructions-link{
   text-decoration: none;
     width: 300px;
   height: 300px;
 }
+
+/* categories level */
+.level-btn {
+  background-color: var(--blue-color);
+  padding: 10px 30px;
+  border: none;
+
+}
+
+.level-btn a {
+  width: auto;
+}
+
+.all-btn {
+ margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  gap: 30px;
+}
+
+
+/* TABLE */
+main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
+table {
+  background-color: var(--blue-color);
+  padding: 50px;
+  width: 100%;
+margin: 4rem 0;
+border-radius: 5px;
+
+}
+tr {
+  height: 60px;
+  border-top: 0.5px solid #00000080;
+  border-bottom:  0.5px solid #00000080;
+  text-align: center;
+
+}
+td {
+  border-left:  0.5px solid #00000080;
+  border-right: 0.5px solid #00000080;
+  vertical-align: middle;
+  text-align: left;
+  padding: 1rem 10px;
+  white-space: wrap;
+  overflow: hidden;
+
+}
+
+th{
+  border: 0.5px solid #00000080;
+  background-color: var(--white);
+  vertical-align: middle;
+  font-size: 16pt;
+  font-weight: 700;
+  padding: 0 2rem;
+}
+
+.edit-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.edit-btn a {
+  text-decoration: none;
+}
+
 /* footer */
 
 main {
@@ -482,15 +562,3 @@ z-index: 100;
 }
 
 
-/* TABLE */
-main {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 80%;
-}
-table {
-  background-color: var(--blue-color);
-  padding: 20px 30px;
-  border-radius: 10px;
-  width: 100%;
-}
