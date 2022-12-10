@@ -7,16 +7,21 @@ if (!$_POST) {
 
 // Store $_POST data to variables for readability
 $title_value = sanitize_value ($_POST['title']);
+$image_value = sanitize_value ($_POST['image']);
 $description_value = sanitize_value ($_POST['description']);
 $materials_value = sanitize_value($_POST['materials']);
 $instructions_value = sanitize_value($_POST['instructions']);
+$level_value = sanitize_value($_POST ['level']);
 
 
 $result = add_instructions(
     $title_value,
+    $image_value,
     $description_value, 
     $materials_value, 
-    $instructions_value);
+    $instructions_value
+    $level_value
+);
 
 // Check there are no errors with our SQL statement
 if ($result) {

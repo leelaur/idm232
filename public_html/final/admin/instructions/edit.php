@@ -32,7 +32,7 @@ if ($result-> num_rows > 0) {
 
               <div>
               <label for="">Image</label>
-              <input class="border-black border-2" type="text" name="title" value="<?php echo $instructions ['image']?>">
+              <input class="border-black border-2" type="text" name="image" value="<?php echo $instructions ['image']?>">
               </div>
 
               <div class="block">
@@ -55,6 +55,13 @@ if ($result-> num_rows > 0) {
                 <br>
                 <input class=" js-tinymce border-black border-2" type="text" name="instructions"
                 value="<?php echo $instructions ['instructions']?>">
+              </div>
+
+              <div class="block">
+                <label for="">Level</label>
+                <br>
+                <input class=" js-tinymce border-black border-2" type="text" name="level"
+                value="<?php echo $instructions ['level']?>">
               </div>
 
               <input class=" nline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4

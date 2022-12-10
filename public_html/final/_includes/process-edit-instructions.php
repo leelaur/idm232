@@ -7,13 +7,14 @@ if (!$_POST) {
 
 // Store $_POST data to variables for readability
 $title_value = sanitize_value($_POST['title']);
+$image_value = sanitize_value($_POST['image']);
 $description_value = sanitize_value($_POST['description']);
 $materials_value = sanitize_value($_POST['materials']);
 $instructions_value = sanitize_value($_POST['instructions']);
-$id_value = sanitize_value($_POST['id']);
+$level_value = sanitize_value($_POST['level']);
 
 // Create a SQL statement to insert the data into the database
-$query = "UPDATE instructions SET title = '{$title_value}', description = '{$description_value}', materials = '{$materials_value}', instructions = '{$instructions_value}' WHERE id = {$id_value}";
+$query = "UPDATE instructions SET title = '{$title_value}', image = '{$image_value}', description = '{$description_value}', materials = '{$materials_value}', instructions = '{$instructions_value}, level = '{$level_value}' WHERE id = {$id_value}";
 
 // Run the SQL statement
 $result = mysqli_query($db_connection, $query);

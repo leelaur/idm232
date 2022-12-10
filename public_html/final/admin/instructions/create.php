@@ -31,7 +31,7 @@ $result = mysqli_query($db_connection, $query);
                 <input class="border-black border-2" type="text" name="title">
               </div>
               <div>
-                
+
               <label for="">Image</label>
                 <input class="border-black border-2" type="text" name="title">
               </div>
@@ -51,6 +51,12 @@ $result = mysqli_query($db_connection, $query);
 
               <div class="block">
                 <label for="">Instructions</label>
+                <br>
+                <textarea class=" js-tinymce border-black border-2" name="instructions"></textarea>
+              </div>
+
+              <div class="block">
+                <label for="">Level</label>
                 <br>
                 <textarea class=" js-tinymce border-black border-2" name="instructions"></textarea>
               </div>
