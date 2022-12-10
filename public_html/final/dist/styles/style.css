@@ -214,46 +214,6 @@ margin-top: 50px;
   max-width: 80%;
 }
 
-.category-menu {
-  min-width: 250px;
-  height: 100%;
-  border-style: dashed ;
-  display : flex;
-  flex-direction: column;
-  margin-top: 40px;
-
-  position: sticky;
-}
-
-.category-menu-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-}
-
-.category-list-item {
-width: 100%;
-height: 80px;
-  border-bottom: 1px dashed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.category-list-item--none {
-  border-bottom: none;
-}
-
-.category-menu-title {
-  height: 75px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--blue-color);
-  border-bottom: dashed;
-}
 
 /* origami instructions */ 
 

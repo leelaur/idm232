@@ -1,12 +1,16 @@
 <?php
 $navigation_items = [
     [
-        'title' => 'Holiday Origami',
-        'url' => site_url() . '/categories/holiday.php',
+        'title' => 'Beginner',
+        'url' => site_url() . '/categories/beginner.php',
     ],
     [
-        'title' => 'Animal Origami',
-        'url' => site_url() . '/categories/animal.php',
+        'title' => 'Intermediate',
+        'url' => site_url() . '/categories/intermediate.php',
+    ],
+    [
+        'title' => 'Advanced',
+        'url' => site_url() . '/categories/advanced.php',
     ],
 
 

@@ -11,7 +11,7 @@
                         <li class="menu-list-item">Search</li>
                     </a>
                     <a href="<?php echo site_url(); ?>/categories/index.php" class="menu-link">
-                        <li class="menu-list-item menu-list--line">Categories</li>
+                        <li class="menu-list-item menu-list--line"> Categories </li>
                     </a>
                     <a href="<?php echo site_url(); ?>/admin/index.php" class="menu-link">
                         <li class="menu-list-item menu-list--line">Admin</li>

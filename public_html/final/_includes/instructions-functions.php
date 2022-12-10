@@ -7,12 +7,12 @@
  * @param  string $price - service price of the service
  * @return object - mysqli_result
  */
-function add_instructions($title, $image, $description, $materials, $instructions, $level)
+function add_instructions($title, $level, $image, $description, $materials, $instructions)
 {
     global $db_connection;
     $query = 'INSERT INTO instructions';
-    $query .= ' (title, image, description, materials, instructions, level)';
-    $query .= " VALUES ('$title', '$image', '$description', '$materials', '$instructions', '$level')";
+    $query .= ' (title, level, image, description, materials, instructions)';
+    $query .= " VALUES ('$title', '$level', '$image', '$description', '$materials', '$instructions')";
     $result = mysqli_query($db_connection, $query);
     return $result;
 }
@@ -38,11 +38,11 @@ function get_instructions_by_id($id)
     }
 }
 
-function edit_instructions($title, $description, $materials, $instructions, $level)
+function edit_instructions($title, $level, $image, $description, $materials, $instructions)
 {
     global $db_connection;
     $query = 'UPDATE instructions';
-    $query .= " SET title = '{$title}', image = '{$image}', description = '{$description}', materials = '{$materials}', instructions = '{$instructions}', level = '{$level}";
+    $query .= " SET title = '{$title}', level = '{$level}' , image = '{$image}', description = '{$description}', materials = '{$materials}', instructions = '{$instructions}'";
     $query .= " WHERE id = $id";
     $result = mysqli_query($db_connection, $query);
     return $result;
