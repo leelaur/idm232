@@ -135,7 +135,11 @@ table {
 
 /* CSS STARTS */
 * {
-/* font-family: 'Single Day'; */
+font-family: 'Single Day';
+}
+
+h1, h2,h3, h4, h5, h6, .title {
+  font-family: 'Single Day';
 }
 
 
@@ -221,7 +225,16 @@ list-style: none;
   transition: all .2s ease-in-out;
 }
 
+.logo {
+  width: 80px;
+}
 
+.top-left-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
 
 /* category entire */
 
@@ -360,8 +373,8 @@ align-items: center;
 
 .instructions-link{
   text-decoration: none;
-    width: 300px;
-  height: 300px;
+    width: 400px;
+  height: 400px;
 }
 
 /* categories level */
@@ -421,9 +434,10 @@ th{
   border: 0.5px solid #00000080;
   background-color: var(--white);
   vertical-align: middle;
-  font-size: 16pt;
+  font-size: 20pt;
   font-weight: 700;
   padding: 0 2rem;
+  font-family: 'Single Day';
 }
 
 .edit-btn {
