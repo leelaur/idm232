@@ -450,20 +450,29 @@ align-items: center;
   padding: 10px 30px;
   text-decoration: none;
 
+
+}
+.all-level-btn {
+  display: flex;
+  flex: row;
+  margin: 3rem 0;
+  justify-content: center;
+
+  width: auto;
 }
 
-.level-btn a {
+.level-link{
   width: auto;
 
 }
 
-.all-btn {
+/* .all-btn {
  margin: 3rem 0;
   display: flex;
   justify-content: flex-start;
 
   width: 100%;
-}
+} */
 
 
 /* TABLE */
@@ -694,11 +703,16 @@ display: inline-block;
 
   }
 
+  .menu-list-item {
+    width: 100%;
+  }
+
   .menu-list-vertical {
-    flex-wrap: column;
+    display: block;
+    right:0;
     position: absolute;
     width: 100%;
-    text-align: left;
+    text-align: center;
     border: dashed;
     border-top: none;
     z-index:-10;

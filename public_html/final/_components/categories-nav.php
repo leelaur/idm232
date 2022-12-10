@@ -30,11 +30,12 @@ $navigation_items = [
 
       foreach ($navigation_items as $nav_item) {
           echo "
-
-            <a href='{$nav_item['url']}' class='text-gray-900 rounded-l-lg group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-sm font-medium text-center hover:bg-gray-50 focus:z-10'>
+         <div class='all-level-btn'>
+            <a href='{$nav_item['url']}' class='text-gray-900 rounded-l-lg group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-sm font-medium hover:bg-gray-50 focus:z-10 level-link' style='text-decoration:none;color: black;'>
               <span class='level-btn'>{$nav_item['title']}</span>
               
             </a>
+          </div>
           ";
       }
 ?>

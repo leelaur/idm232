@@ -6,7 +6,7 @@
             </a>
             <h2 class="title-nav"> <a href="<?php echo site_url(); ?>/index.php" class="menu-link">Unfolded Origami </a> </h2>
 </div>
-            <nav>
+            <nav class="menu-nav">
             <img src="<?php echo site_url(); ?>/dist/images/menu-img.png" class="menu-img"id="menu-img"> 
             <img src="<?php echo site_url(); ?>/dist/images/menu-img-close.png" class="menu-img-close"> 
             
