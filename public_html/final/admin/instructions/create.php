@@ -45,7 +45,8 @@ $result = mysqli_query($db_connection, $query);
               <div class="block">
                 <label for="">Description</label>
                 <br>
-                <textarea class=" js-tinymce border-black border-2" name="description"></textarea>
+                <br>
+                <textarea class="js-tinymce border-black border-2" name="description"></textarea>
               </div>
 
 

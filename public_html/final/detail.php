@@ -29,7 +29,9 @@ $result = mysqli_query($db_connection, $query);
   
             </div>
 
-
+            <div class='details-img'>
+            <img src='{$site_url}/{$instructions['image']}' alt=''>
+           </div>
                     <div class='details-wrapper'>
                         <p class='details-section'>
                             {$instructions['description']}
@@ -43,14 +45,14 @@ $result = mysqli_query($db_connection, $query);
                             </p>
                         </div>
                         <div class='details-section'>
-                        <p class='details-subtitle'>
+                            <p class='details-subtitle'>
                                 Instructions:
                             </p>
-                            <p class=''>
+                            <p >
                                 {$instructions['instructions']}
                             </p>
                         </div>
-                        <img class='details-img' width='500px' height='500px' src='{$site_url}/{$instructions['image']}' alt=''>
+
                     </div>
 
         ";
