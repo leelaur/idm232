@@ -411,7 +411,7 @@ align-items: center;
 }
 
 .cards-img {
-  width: 200px;
+  /* width: 200px; */
   height: 200px;
 }
 
@@ -771,8 +771,8 @@ display: inline-block;
   align-content: center;
 }
 .details-img {
-  width: 400px;
-  height: 400px;
+  /* width: 400px;
+  height: 400px; */
   object-fit: cover;
 }
 
