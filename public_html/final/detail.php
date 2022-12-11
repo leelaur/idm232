@@ -24,19 +24,33 @@ $result = mysqli_query($db_connection, $query);
         echo "
                 <div class=''>
                 <div>
-                <h1 class='title '>{$instructions['title']}</h1>
+                <h1 class='title detail-title'>{$instructions['title']}</h1>
                 <p class='text-center'>Level: {$instructions['level']}</p>
   
             </div>
 
 
                     <div class='details-wrapper'>
-                        <p class='details-section'>{$instructions['description']}</p>
-                        <p class='details-section'><div class='details-subtitle'>Materials: <div>{$instructions['materials']}</p>
-                        <p class='details-section'><div class='details-subtitle'>Instructions:</div>{$instructions['instructions']}</p>
-                        <div class='details-img-container'>
+                        <p class='details-section'>
+                            {$instructions['description']}
+                        </p>
+                        <div class='details-section'>
+                            <p class='details-subtitle'>
+                                Materials:
+                            </p>
+                            <p>
+                                {$instructions['materials']}
+                            </p>
+                        </div>
+                        <div class='details-section'>
+                        <p class='details-subtitle'>
+                                Instructions:
+                            </p>
+                            <p class=''>
+                                {$instructions['instructions']}
+                            </p>
+                        </div>
                         <img class='details-img' width='500px' height='500px' src='{$site_url}/{$instructions['image']}' alt=''>
-            </div>
                     </div>
 
         ";

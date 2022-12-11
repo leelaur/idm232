@@ -172,12 +172,17 @@ h2 {
 p {
   font-family: 'Open Sans';
   line-height: 1.5;
+  font-size: var(--small-font);
 }
 
 .title, .subtitle {
   margin: 2rem 0;
+  font-size: 'Single Day';
 }
 
+.title {
+  font-size: var();
+}
 .subtitle {
 text-decoration-style: wavy;
 }
@@ -352,12 +357,6 @@ justify-items: center;
 }
 
 .search-box {
-  /* text-align: center;
-  border-radius: 25px;
-  border-style: dashed;
-  width: 400px;
-  height: 40px; */
-
   width: 400px;
   border: none;
   border-right: none;
@@ -475,13 +474,6 @@ align-items: center;
 
 }
 
-/* .all-btn {
- margin: 3rem 0;
-  display: flex;
-  justify-content: flex-start;
-
-  width: 100%;
-} */
 
 .level-nav {
   display: flex;
@@ -774,6 +766,7 @@ display: inline-block;
   /* width: 400px;
   height: 400px; */
   object-fit: cover;
+margin: auto;
 }
 
 .details-img-container {
@@ -788,3 +781,4 @@ display: inline-block;
 .details-subtitle {
   font-size: var(--large-font);
 }
+
