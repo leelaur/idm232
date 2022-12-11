@@ -100,7 +100,7 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+  line-height: 1.5;
 }
 ol,
 ul {
@@ -183,11 +183,11 @@ p {
 .title {
   font-size: var();
 }
-.subtitle {
-text-decoration-style: wavy;
+
+
+nav {
+  line-height: 1;
 }
-
-
 
 
 
@@ -434,6 +434,7 @@ align-items: center;
     width: 400px;
     height: 400px;
     white-space: none;
+    color: var(--black);
 }
 
 .add-inst-btn {
@@ -664,7 +665,7 @@ display: inline-block;
 
 /* TINY MCE */
 .js-tinymce {
-  height: 300px;
+  height: 600px;
 }
 
 /*Top space after fixed nav */
@@ -812,4 +813,34 @@ input {
 
 .block{
   margin: 2rem 0;
+}
+
+.submit-btn {
+  width: 20%;
+  padding: 20px 50px;
+  margin-bottom: 2rem;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+}
+
+/*Search Results*/
+
+.search-results {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.search-box-results {
+  height: 30px;
+}
+
+.search-bar-results {
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.result-output {
+  margin-bottom: 2rem;
 }

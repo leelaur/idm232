@@ -32,13 +32,17 @@ if ($results->num_rows > 0) {
 ?>
 
       <?php include_once __DIR__ . '/../_components/headspace.php';?>
-        <h1 class="text-xl font-semibold text-gray-900">Search Results</h1>
-        <form action="<?php echo site_url(); ?>/search" method="GET">
-          <input class=" border-black border-2" type="text" name="search" id="search" placeholder="Search"
+      <br>
+        <h1 class="search-results">
+          Search Results
+        </h1>
+        <form action="<?php echo site_url(); ?>/search" method="GET" class="search-bar search-bar-results">
+          <input class=" border-black border-2 search-box search-box-results" type="text" name="search" id="search" placeholder="Search"
             value="<?php echo $search; ?>">
-          <button type="submit">Search</button>
+          <button type="submit" class="search-button">Search</button>
         </form>
-        <h2>You searched for "<?php echo $search; ?>"</h2>
+
+        <h2 class="result-output">You searched for "<?php echo $search; ?>"</h2>
         <?php
         // If no results, echo no results
         if (!$instructions_results) {

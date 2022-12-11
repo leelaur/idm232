@@ -33,7 +33,6 @@ $result = mysqli_query($db_connection, $query);
 
               <div class="block">
                 <label for="">Level</label>
-                <br>
                 <input class="border-black border-2" type="text" name="level">
               </div>
 
@@ -52,19 +51,20 @@ $result = mysqli_query($db_connection, $query);
 
               <div class="block">
                 <label for="">Materials</label>
-                <br>
+                <br><br>
                 <textarea class=" js-tinymce border-black border-2" name="materials"></textarea>
               </div>
 
               <div class="block">
                 <label for="">Instructions</label>
-                <br>
+                <br> <br>
                 <textarea class=" js-tinymce border-black border-2" name="instructions"></textarea>
               </div>
 
               <input
-                class="nline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+                class="nline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto submit-btn"
                 type="submit" value="submit">
+
             </form>
           </div>
         </div>
