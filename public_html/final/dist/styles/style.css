@@ -445,6 +445,10 @@ align-items: center;
   border: none;
 }
 
+.add-inst-btn:hover {
+  background-color: white;
+}
+
 /* categories level */
 .level-btn {
   background-color: var(--white);
@@ -579,7 +583,7 @@ font-size: var(--medium-font);
   text-align: center;
   margin: auto;
 }
-/*Input fields */
+
 
 /* footer */
 
@@ -805,9 +809,9 @@ label {
 input {
   font-family: 'Open Sans';
   border: dashed 0.5px;
-  width: 40%;
   height: 30px;
-  /* padding:0 20px; */
+  width: 40%;
+
 
 }
 
@@ -815,14 +819,18 @@ input {
   margin: 2rem 0;
 }
 
-.submit-btn {
+.submit-input {
   width: 20%;
-  padding: 20px 50px;
   margin-bottom: 2rem;
+  background-color: var(--blue-color);
+  font-family: 'Single Day';
+  font-size: var(--medium-font);
+  
 }
 
-.submit-btn:hover {
+.submit-input:hover {
   cursor: pointer;
+  border: solid;
 }
 
 /*Search Results*/
